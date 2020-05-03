@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>bingo</title>
+	<style type="text/css">
+		.grid{
+			display: grid;
+			grid-template-columns: auto auto auto;
+			background-color: lightpink;
+			padding: 10px;
+		}
+		.grid-item{
+			text-align: center;
+			font-size: 30px;
+			padding: 20px;
+			border: 1px solid gray;
+			background-color: cornsilk;
+		}
+		a{
+			font-size: 2em;
+		}
+		html{
+			box-sizing: border-box;
+			font-family: Verdana, Geneva, sans-serif; 
+			color: black;
+		}
+		h3{
+			text-align: center;
+			display: grid;
+			border: 1px solid gray;
+			background: white;
+		}
+		body{
+			background: whitesmoke;
+			margin-top: 30px;
+			margin-bottom: 50px;
+			line-height: 1.4;
+		}
+		.bingo{
+			font-family: Verdana, Geneva, sans-serif;
+			text-align: center;
+			font-size: 2em;
+			color: black;
+		}
+		img{
+			width: 300px;
+			height: 100px;
+		}
+		.main-container{
+			display: grid;
+			grid-gap: 20px;
+		}
+		.main-nav ul{
+			display: grid;
+			grid-gap: 10px;
+			padding: 0;
+			list-style: none;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+		.main-nav a{
+			background: lightblue;
+			display: block;
+			text-decoration: none;
+			padding: 0.9rem;
+			text-align: center;
+			color: black;
+			text-transform: uppercase;
+			font-size: 1rem;
+		}
+		.main-nav a:hover{
+			background: white;
+			color: black;
+		}
+		.info{
+			background: lightpink;
+			/*display: grid;*/
+			grid-gap: 30px;
+			grid-template-columns: repeat(2, 1fr);
+			padding: 3rem;
+			text-align: center;
+			color: black;
+		}
+		.info > p{
+			text-align: center;
+		}
+		footer{
+			margin-top: 2rem;
+			background: lightblue;
+			color: black;
+			text-align: center;
+			padding: 1rem;
+		}
+		ul{
+			list-style: none;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+		@media(max-width: 500px){
+			.main-container{
+				display: grid;
+				grid-template-areas: 
+			}
+		.main-nav ul{
+		grid-template-columns: 1fr;
+		}
+		.main-container{
+		grid-template-columns: 1fr;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<header class="bingo">Bingo</header>
+	</div>
+	<div class="main-container">
+		<!-- navigation -->
+		<nav class="main-nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="eportfolio.html">eportfolio</a></li>
+				<li><a href="howsyourweek.html">How's Your Week</a></li>
+				<li><a href="animation.html">Animation</a></li>
+			</ul>
+		</nav>
+<h3>Sports</h3>
+<div class="grid">
+	<div class="grid-item">Hiking</div>
+	<div class="grid-item">Swimming</div>
+	<div class="grid-item">Running</div>
+	<div class="grid-item">Walking</div>
+	<div class="grid-item">Zumba</div>
+	<div class="grid-item">Football</div>
+	<div class="grid-item">Aerobics</div>
+	<div class="grid-item">Sprinting</div>
+	<div class="grid-item">Power Walk</div>
+	<div class="grid-item">Brisk Walk</div>
+	<div class="grid-item">Kayaking</div>
+	<div class="grid-item">Gym</div>
+</div>
+<footer>
+	<p>19FTT1127 AS_01 &copy; 2020</p>
+		</footer>
+</body>
+</html>

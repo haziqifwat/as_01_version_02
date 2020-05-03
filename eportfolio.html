@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>eportfolio</title>
+	<style type="text/css">
+		html{
+			box-sizing: border-box;
+			font-family: Verdana, Geneva, sans-serif; 
+			color: black;
+		}
+		body{
+			/*background: #FFFAF0;*/
+			background-image: url(images/wallpaper.jpg);
+			margin-top: 30px;
+			margin-bottom: 50px;
+			line-height: 1.4;
+		}
+		.eportfolio{
+			font-family: Verdana, Geneva, sans-serif;
+			text-align: center;
+			font-size: 1.9rem;
+		}
+		img{
+			width: 300px;
+			height: 100px;
+		}
+		.main-container{
+			display: grid;
+			grid-gap: 20px;
+		}
+		.main-nav ul{
+			display: grid;
+			grid-gap: 10px;
+			padding: 0;
+			list-style: none;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+		.main-nav a{
+			background: lightblue;
+			display: block;
+			text-decoration: none;
+			padding: 0.9rem;
+			text-align: center;
+			color: black;
+			text-transform: uppercase;
+			font-size: 1rem;
+		}
+		.main-nav a:hover{
+			background: white;
+			color: black;
+		}
+		img{
+			/*width: 30%;*/
+			height: 10%;
+		}
+		.info{
+			background: black;
+			/*display: grid;*/
+			grid-gap: 30px;
+			grid-template-columns: repeat(2, 1fr);
+			padding: 3rem;
+			text-align: center;
+			color: white;
+		}
+		.info > p{
+			text-align: center;
+		}
+		footer{
+			margin-top: 2rem;
+			background: lightblue;
+			color: black;
+			text-align: center;
+			padding: 1rem;
+		}
+		table, td{
+			border: 1px solid white;
+			border-collapse: collapse;
+			text-align: center;
+			padding: 2%;
+
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+		@media(max-width: 700px){
+			.main-container{
+				display: grid;
+				grid-template-areas: 
+			}
+		.main-nav ul{
+		grid-template-columns: 1fr;
+		}
+		.info{
+		grid-template-columns: 1fr;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<header class="eportfolio">eportfolio</header>
+	</div>
+	<div class="main-container">
+		<!-- navigation -->
+		<nav class="main-nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="howsyourweek.html">How's My Week</a></li>
+				<li><a href="bingo.html">Bingo</a></li>
+				<li><a href="animation.html">Animation</a></li>
+			</ul>
+		</nav>
+		<!-- Info Section -->
+		<section class="info">
+			<div>
+				<h2>Hobbies</h2>
+				<p>My hobbies include:</p>
+				<ul>
+					<li>Swimming</li>
+					<li>Listening to podcasts and radio</li>
+					<li>Going to the gym</li>
+				</ul>
+				<img src="images/swimming.jpg">
+				<img src="images/podcast.jpg">
+				<img src="images/gym.jpg">
+			</div>
+		</section>
+		<section class="info">
+			<div>
+				<h2>Skills</h2>
+				<p>I possess quite a number of skills, they are:</p>
+				<ul>
+					<li>Writing fluently in English</li>
+					<li>Network well among students</li>
+					<li>Paying attention to details</li>
+					<li>Ability to proofread</li>
+				</ul>
+			</div>
+		</section>
+		<section class="info">
+			<div id="center">
+				<h2>Vision of my future</h2>
+				<p>I wish to aspire to become a highly respected and experienced individual regardless of where my work area will be. I want to become that type of person so that I can assist and teach those with me very well and guide them. I'm also open to learn from my mistakes and will always continue to improve myself on a daily basis.</p>
+			</div>
+		</section>
+		<section class="info">
+			<div>
+		<table>
+			<th>School Experience</th>
+			<tr>
+				<td>Name of school / Institution</td>
+				<td>Year</td>
+			</tr>
+			<tr>
+				<td>St. James' School</td>
+				<td>2004-2009</td>
+			</tr>
+			<tr>
+				<td>SM PJN PG Abu Bakar</td>
+				<td>2010-2014</td>
+			</tr>
+			<tr>
+				<td>IBTE Sultan Saiful Rijal Campus</td>
+				<td>2016-2018</td>
+			</tr>
+			<tr>
+				<td>Politeknik Brunei</td>
+				<td>2019-Present</td>
+			</tr>
+		</table>
+	</div>
+		</section>
+		<section class="info">
+			<div>
+				<h2>Personal Reflection on my achievements</h2>
+				<p>I'm thankful for being able to continue my studies. I'm also grateful for my first semester because it taught me how to manage my time properly as well as prioritising which tasks is more vital so that I can get it done on time. 
+				<br>Now I am on my second semester in Politeknik Brunei with DLIC05, looking forward to learn more with my colleagues and my respected lecturers.</p>
+			</div>
+		</section>
+		<footer>
+			<p>19FTT1127 AS_01 &copy; 2020</p>
+		</footer>
+	</div>
+	<!-- main-container ends -->
+
+</body>
+</html>

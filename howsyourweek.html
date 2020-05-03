@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>How's Your Week?</title>
+	<style type="text/css">
+		html{
+			box-sizing: border-box;
+			font-family: Verdana, Geneva, sans-serif; 
+			color: black;
+		}
+		body{
+			/*background: #FFFAF0;*/
+			background-image: url(images/week.jpg);
+			margin-top: 30px;
+			margin-bottom: 50px;
+			line-height: 1.4;
+		}
+		.week{
+			font-family: Verdana, Geneva, sans-serif;
+			text-align: center;
+			font-size: 1.9rem;
+			color: black;
+			border: 1px solid black;
+			background-color: white;
+		}
+		img{
+			width: 300px;
+			height: 100px;
+		}
+		.main-container{
+			display: grid;
+			grid-gap: 20px;
+		}
+		.main-nav ul{
+			display: grid;
+			grid-gap: 10px;
+			padding: 0;
+			list-style: none;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+		}
+		.main-nav a{
+			background: black;
+			display: block;
+			text-decoration: none;
+			padding: 0.9rem;
+			text-align: center;
+			color: white;
+			text-transform: uppercase;
+			font-size: 1rem;
+		}
+		.main-nav a:hover{
+			background: white;
+			color: black;
+		}
+		img{
+			width: 37%;
+			height: 25%;
+		}
+		video{
+			width: 40%;
+			height: 25%;
+		}
+		.info{
+			background: lightpink;
+			/*display: grid;*/
+			grid-gap: 30px;
+			grid-template-columns: repeat(2, 1fr);
+			padding: 3rem;
+			text-align: center;
+			color: black;
+		}
+		.info > p{
+			text-align: center;
+		}
+		footer{
+			margin-top: 2rem;
+			background: white;
+			color: black;
+			text-align: center;
+			padding: 1rem;
+		}
+		table, td{
+			border: 1px solid white;
+			border-collapse: collapse;
+			text-align: center;
+			padding: 2%;
+
+		}
+		ul{
+			list-style: none;
+		}
+		a:hover{
+			text-decoration: underline;
+		}
+		@media(max-width: 700px){
+			.main-container{
+				display: grid;
+				grid-template-areas: 
+			}
+		.main-nav ul{
+		grid-template-columns: 1fr;
+		}
+		.info{
+		grid-template-columns: 1fr;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<header class="week">How's My Week?</header>
+	</div>
+	<div class="main-container">
+		<!-- navigation -->
+		<nav class="main-nav">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="eportfolio.html">eportfolio</a></li>
+				<li><a href="bingo.html">Bingo</a></li>
+				<li><a href="animation.html">Animation</a></li>
+			</ul>
+		</nav>
+		<!-- Info Section -->
+		<section class="info">
+			<div>
+				<h2>Assignments</h2>
+				<ul>
+					<li><p>RIS - I was tasked on doing an essay. It was a 1500-1700 words - enjoyable work to do with the additional note that I love to write.
+						<br>The due date was on Wednesday, 4th of March 2020.</p></li>
+					<li><p>LIT - The assignment was a group work - a report with a minimum words going from to 2500 up to 3000. I have paired myself with Amir Haziq and I think we did a compelling job in regards to completing the report.
+						<br>Additionally, we were assigned to complete a survey, powerpoint presentation slides as well as Peer Assessment form. Due date was on Saturday, 7th of March 2020</p></li>
+				</ul>
+			</div>
+		</section>
+		<section class="info">
+			<div>
+				<h2>Classes</h2>
+				<ul>
+					<li><p>BWEP - Sir Khalid had a recap session on Monday where he urged the class to put in more extra effort in revising and reminded the class to consider taking the Remedial Class especially to those who think that they are struggling in any materials taught.</p></li>
+					<li><p>NETF - The class did some exercises on Channel Capacity. Sir Jinn lectured the class on 3 new formulas: 
+						<li>Information Content</li>
+						<li>Signal Rate</li>
+						<li>Information Transfer Rate
+						</p></li>
+				</ul>
+				<img src="images/netfformula.jpg">
+			</div>
+		</section>
+		<section class="info">
+			<div id="center">
+				<h2>Weekend</h2>
+				<p>I spent my weekend with my colleagues at The Empire Hotel</p>
+				<img src="images/landscape.jpg">
+				<img src="images/landscapeii.jpg">
+				<br>
+				<p>Below is a short video</p>
+				<video controls>
+					<source src="video/shortvideo.mov" type="video/mp4">
+				</video>
+			</div>
+		</section>
+		<footer>
+			<p>19FTT1127 AS_01 &copy; 2020</p>
+		</footer>
+	</div>
+	<!-- main-container ends -->
+
+</body>
+</html>
